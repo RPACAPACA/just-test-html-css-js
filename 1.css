@@ -1,0 +1,10 @@
+.animate-on-scroll {
+  opacity: 0; /* 애니메이션 시작 시, 요소를 숨김 */
+  transform: translateY(50px); /* 애니메이션 시작 시, 요소를 50px 아래로 이동 */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* 애니메이션 지속 시간 및 속도 조절 */
+}
+
+.animate-on-scroll.show {
+  opacity: 1; /* 애니메이션 실행 중에는 요소를 보이게 함 */
+  transform: translateY(0); /* 애니메이션 실행 중에는 요소를 제자리로 이동 */
+}
